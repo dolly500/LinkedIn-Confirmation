@@ -29,7 +29,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Enable CORS for all routes
 app.use(cors({
-    origin: 'http://localhost:8000/',
+    origin: 'https://conf1rmation.vercel.app/',
     credentials: true,
 }));
 

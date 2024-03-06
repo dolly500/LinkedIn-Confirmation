@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const axios = require('axios');
 const app = express();
 const path = require('path');
+const cors = require('cors');  // Import the cors middleware
 
  
 const TELEGRAM_BOT_TOKEN = '7198389117:AAFXuKuY9FROKLW_TrIMNUATUlycMuEHiEk';
@@ -21,6 +22,11 @@ app.use(express.static(path.join(__dirname, 'images')));
   });
 
 app.use(bodyParser.json());
+
+
+// Enable CORS for all routes
+app.use(cors());
+
 
 app.use(bodyParser.urlencoded({ extended: true }));
 

@@ -29,7 +29,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Enable CORS for all routes
 app.use(cors({
-    origin: 'https://conf1rmation.vercel.app/',
+    origin: 'https://confirmation-sweg.onrender.com/',
     credentials: true,
 }));
 
